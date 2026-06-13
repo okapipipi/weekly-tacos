@@ -1230,3 +1230,26 @@ code {
 }
 @media (max-width: 720px) { .taco-grid { grid-template-columns: 1fr; } }
 @media print { .taco-grid { grid-template-columns: 1fr 1fr; } .taco-item { break-inside: avoid; } }
+
+/* ── Tacos 数字スライド（総数＋Top3受け取り/送り）─────── */
+.tacos-stats { display:flex; flex-direction:column; gap:1.1rem; margin-top:var(--gap-sm); }
+.stat-hero { display:flex; align-items:baseline; gap:.5rem; }
+.stat-hero b { font-size:clamp(3rem,7vw,5rem); font-weight:800; color:var(--grape); line-height:1; }
+.stat-hero .u { font-size:1.05rem; font-weight:700; }
+.stat-hero .lbl { font-size:.92rem; color:var(--fg-muted); margin-left:.5rem; }
+.rank-pair { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
+.rank-col { background:var(--bg-elev); border:1px solid var(--line); border-radius:16px; padding:1rem 1.2rem; }
+.rank-col h3 { font-size:.88rem; font-weight:800; margin-bottom:.55rem; }
+.rank-col h3.recv { color:var(--pink); }
+.rank-col h3.sent { color:var(--mint); }
+.rank-col ol { list-style:none; display:flex; flex-direction:column; gap:.42rem; }
+.rank-col li { display:flex; gap:.5rem; font-size:.84rem; align-items:baseline; font-family:var(--font-jp); }
+.rank-col li .b { font-weight:800; color:var(--grape); min-width:1.4rem; }
+.rank-col li .m { margin-left:auto; font-weight:700; color:var(--fg-muted); font-size:.76rem; white-space:nowrap; }
+@media (max-width:720px){ .rank-pair { grid-template-columns:1fr; } }
+
+/* ── Tacos 全件を1ページに（コンパクト版）──────────────── */
+.taco-grid--all { gap:.4rem .8rem; }
+.taco-grid--all .taco-item { padding:.4rem .68rem; border-radius:11px; }
+.taco-grid--all .taco-item__who { font-size:.78rem; }
+.taco-grid--all .taco-item__msg { font-size:.67rem; line-height:1.3; }
