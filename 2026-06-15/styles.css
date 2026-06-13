@@ -1253,3 +1253,7 @@ code {
 .taco-grid--all .taco-item { padding:.4rem .68rem; border-radius:11px; }
 .taco-grid--all .taco-item__who { font-size:.78rem; }
 .taco-grid--all .taco-item__msg { font-size:.67rem; line-height:1.3; }
+
+/* ── 補足キャプション / 全件の日時ラベル ─────────────── */
+.rank-note { margin-top:.55rem; font-size:.7rem; line-height:1.4; color:var(--fg-subtle); font-family:var(--font-jp); }
+.taco-item__t { font-family:var(--font-mono); font-size:.62rem; color:var(--fg-muted); font-weight:600; margin-right:.45rem; }
