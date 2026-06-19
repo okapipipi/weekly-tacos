@@ -1,0 +1,12 @@
+{
+  "id": "slides-weekly-tacos",
+  "title": "先週のTacos",
+  "subtitle": "Weekly All Hands / 感謝のふりかえり",
+  "description": "先週(6/12-6/19)社内で送られた 24 件の Tacos（感謝）を全件まとめた週次オールハンズ資料。サマリ・全件一覧・注目ピックアップを 1 周し、今週への前向きな締めで終える。",
+  "tags": ["light", "pastel", "playful", "tacos", "all-hands"],
+  "swatches": ["#fff7ed", "#6b5bff", "#ff7ab6", "#51d0a8"],
+  "slideCount": 9,
+  "patterns": ["cover", "section", "stats", "taco-list", "two-column", "closing"],
+  "fonts": ["Plus Jakarta Sans", "Noto Sans JP", "Geist Mono"],
+  "createdAt": "2026-06-22"
+}
