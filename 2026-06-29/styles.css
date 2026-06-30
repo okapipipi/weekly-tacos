@@ -638,6 +638,23 @@ code {
   color: var(--pink);
 }
 
+/* ---------- Genre chip ---------- */
+.genre-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.25em 0.9em;
+  border-radius: 99px;
+  margin-bottom: 0.55rem;
+}
+.genre-chip--office { background: var(--mint-tint);  color: #1a7a5e; border: 1px solid color-mix(in srgb, var(--mint) 40%, transparent); }
+.genre-chip--sales  { background: var(--grape-tint); color: var(--grape); border: 1px solid color-mix(in srgb, var(--grape) 30%, transparent); }
+.genre-chip--learn  { background: var(--sun-tint);   color: #8a6500;  border: 1px solid color-mix(in srgb, #f0b800 40%, transparent); }
+
 /* ---------- Critical Tacos Award ---------- */
 .award-block {
   display: flex;
