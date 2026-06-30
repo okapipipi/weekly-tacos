@@ -638,6 +638,79 @@ code {
   color: var(--pink);
 }
 
+/* ---------- Critical Tacos Award ---------- */
+.award-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex: 1;
+  margin-top: var(--gap-sm);
+}
+.award-badge {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1;
+}
+.award-quote {
+  background: var(--grape-tint);
+  border-left: 4px solid var(--grape);
+  border-radius: var(--r-lg);
+  padding: clamp(1.1rem, 2vw, 1.6rem) clamp(1.2rem, 2.4vw, 2rem);
+  font-family: var(--font-jp);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.85;
+  color: var(--fg);
+  margin: 0;
+  font-style: normal;
+}
+.award-quote strong { color: var(--grape); }
+.award-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.award-reason {
+  background: var(--bg-elev);
+  border-radius: var(--r-lg);
+  padding: 1.1rem 1.4rem;
+  border: 1.5px solid var(--line);
+}
+.award-reason h3 {
+  font-size: var(--t-xs);
+  font-family: var(--font-mono);
+  color: var(--grape);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+}
+.award-reason ul {
+  padding-left: 1.1em;
+  font-size: var(--t-sm);
+  line-height: 1.75;
+  color: var(--fg-muted);
+  font-family: var(--font-jp);
+}
+.award-notice {
+  background: var(--pink-tint);
+  border-radius: var(--r-lg);
+  padding: 1.1rem 1.4rem;
+  border: 1.5px solid color-mix(in srgb, var(--pink) 30%, transparent);
+}
+.award-notice h3 {
+  font-size: var(--t-xs);
+  font-family: var(--font-mono);
+  color: var(--pink);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+}
+.award-notice p {
+  font-size: var(--t-sm);
+  line-height: 1.75;
+  color: var(--fg-muted);
+  font-family: var(--font-jp);
+}
+
 /* ---------- 11 Priorities ---------- */
 .priorities {
   display: flex;
