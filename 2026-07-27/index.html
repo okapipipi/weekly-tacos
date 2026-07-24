@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="先週のTacos — Weekly All Hands / 感謝のふりかえり" />
+  <title>先週のTacos — Weekly All Hands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="deck" id="deck" aria-label="先週のTacos Weekly All Hands">
+    <div class="deck__track" id="track">
+
+      <!-- 01 — Cover -->
+      <section class="slide" data-layout="cover" aria-roledescription="slide" aria-labelledby="s1-title">
+        <div class="cover-deco" aria-hidden="true">
+          <div class="blob blob--a"></div>
+          <div class="blob blob--b"></div>
+          <div class="blob blob--c"></div>
+        </div>
+        <div class="slide__inner slide__inner--cover">
+          <header class="cover__top reveal" style="--i:0">
+            <span class="cover__brand">WEEKLY&nbsp;TACOS</span>
+            <span class="sticker sticker--pink">35&nbsp;TACOS</span>
+          </header>
+          <div class="cover__main">
+            <h1 class="display reveal" style="--i:1" id="s1-title">
+              先週の<span class="gradient">Tacos</span>
+            </h1>
+            <p class="lede reveal" style="--i:2">先週は合計 35 件の「ありがとう」が飛び交いました（スレッド内の返信も含む）。<br />坪井さんのリーダー就任祝いと、秋元さんの脅威の8アポ達成への称賛が中心の一週間でした。</p>
+          </div>
+          <footer class="cover__foot reveal" style="--i:3">
+            <span>全社定例</span>
+            <span class="dot"></span>
+            <span>2026.07.27</span>
+            <span class="dot"></span>
+            <span>Tacos Weekly</span>
+          </footer>
+        </div>
+      </section>
+
+      <!-- 02 — Section: サマリ -->
+      <section class="slide section--grape" data-layout="section" aria-roledescription="slide" aria-labelledby="s2-title">
+        <div class="section-deco" aria-hidden="true">
+          <div class="blob blob--pink blob--big"></div>
+        </div>
+        <div class="slide__inner">
+          <span class="kicker reveal" style="--i:0">01 / 03</span>
+          <div class="section__num reveal" style="--i:1">01</div>
+          <h2 class="section__title reveal" style="--i:2" id="s2-title">先週の <em class="highlight">サマリ</em></h2>
+          <p class="section__sub reveal" style="--i:3">先週は合計 35 件のTacos（スレッド内の返信も含む）。<br />坪井さんのリーダー就任と、秋元さんの脅威の8アポ達成への称賛が中心でした。<br />轟さん・堺さんは送り手としても最多6件を記録し、感謝を贈り合う一週間でした。</p>
+        </div>
+      </section>
+
+      <!-- 03 — 数字（総数＋Top3 受け／送り）-->
+      <section class="slide" data-layout="stats" aria-roledescription="slide" aria-labelledby="s3-title">
+        <div class="slide__inner">
+          <header class="slide-head reveal" style="--i:0">
+            <span class="kicker">By the numbers</span>
+            <h2 class="title" id="s3-title">先週を <em class="highlight">数字で</em></h2>
+          </header>
+          <div class="tacos-stats">
+            <div class="stat-hero reveal" style="--i:1">
+              <b class="metric__num" data-count="35">0</b><span class="u">件</span>
+              <span class="lbl">先週送られたTacosの総数（スレッド返信含む）</span>
+            </div>
+            <div class="rank-pair">
+              <div class="rank-col reveal" style="--i:2">
+                <h3 class="recv">最も多く感謝を受けた Top3</h3>
+                <ol>
+                  <li><span class="b">1</span><span>坪井さん・秋元さん</span><span class="m">各7件</span></li>
+                  <li><span class="b">3</span><span>小甲さん</span><span class="m">4件</span></li>
+                </ol>
+                <p class="rank-note">※坪井さんはリーダー就任のお祝い、秋元さんは脅威の8アポ達成への称賛が重なり、2名とも7件で並びました</p>
+              </div>
+              <div class="rank-col reveal" style="--i:3">
+                <h3 class="sent">最も多く感謝を送った Top3</h3>
+                <ol>
+                  <li><span class="b">1</span><span>轟さん・堺さん</span><span class="m">各6件</span></li>
+                  <li><span class="b">3</span><span>宮城さん</span><span class="m">4件</span></li>
+                </ol>
+                <p class="rank-note">※先週は轟さん・堺さんが6件で最多。特定の人に偏らず、祝福からナレッジ活用の感謝まで幅広く送りました</p>
+              </div>
+            </div>
+            <div class="reveal" style="--i:4; margin-top:1rem; padding:.9rem 1.2rem; background:rgba(81,208,168,.12); border:1px solid var(--mint); border-radius:16px; font-size:.85rem; line-height:1.65; color:var(--fg);">
+              <strong>📚 ナレッジ活用タコス：3件</strong><br />
+              Wikiの知見を実際に試してみて「良かった！」と伝えたタコスです（轟さん→増谷さん／菊池さん→海老根さん／轟さん→坪井さん）。<span style="color:var(--fg-muted)">前回のMTGでのお願いどおり、今週から継続して集計していきます。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 — 先週のTacos 全件（日時つき・日付順・1ページ） -->
+      <section class="slide" data-layout="taco-list" aria-roledescription="slide" aria-labelledby="s4-title">
+        <div class="slide__inner">
+          <header class="slide-head reveal" style="--i:0">
+            <span class="kicker">All Tacos — 全35件（送信日時順・スレッド返信含む）</span>
+            <h2 class="title" id="s4-title">先週の <em class="squiggle">Tacos 全件</em></h2>
+          </header>
+          <ul class="taco-grid taco-grid--all reveal" style="--i:1" role="list">
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 18:48</time>轟さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">個々の進捗確認を徹底して行う姿勢に</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 18:52</time>生井さん<span class="arrow">→</span>カンさん</span><span class="taco-item__msg">zoomのトランスクリプト問題を解決、ネイティブ韓国語にとても助けられた</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 18:57</time>山内さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">売り上げ作成に早々に対応してくれて助かった</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 18:59</time>岡部さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">さすがリーダー！！</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 19:01</time>山内さん<span class="arrow">→</span>小甲さん</span><span class="taco-item__msg">丁寧にリーガルチェック結果を確認いただき大変助かった</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 21:34</time>田中さん<span class="arrow">→</span>増谷さん</span><span class="taco-item__msg">メール作成の留意点・時間の使い方・営業アドバイスに気づきをもらった</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/17 21:43</time>田中さん<span class="arrow">→</span>菊池さん</span><span class="taco-item__msg">同行時に助けていただいた</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/18 05:26</time>菊池さん<span class="arrow">→</span>田中さん</span><span class="taco-item__msg">日々成長！！</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 09:32</time>宮城さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">リーダー就任おめでとうございます</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 09:38</time>轟さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">就任おめでとう、私も負けじと頑張ります</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 09:54</time>轟さん<span class="arrow">→</span>田中さん</span><span class="taco-item__msg">ニュース共有ありがとう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 13:01</time>堺さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">おめでとうございます！</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 16:42</time>岡部さん<span class="arrow">→</span>杉浦さん</span><span class="taco-item__msg">体調で心配かけてごめんね、本当にありがとう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 16:42</time>安達さん<span class="arrow">→</span>杉山さん</span><span class="taco-item__msg">れすはや、対応完了の報告ありがとう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 18:18</time>菊池さん<span class="arrow">→</span>海老根さん</span><span class="taco-item__msg">Hermes情報たすかるう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/21 19:20</time>堺さん<span class="arrow">→</span>中村(岐)さん</span><span class="taco-item__msg">4D、2日目にして4件！前職の経験が活きている</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 19:26</time>宮城さん<span class="arrow">→</span>小甲さん</span><span class="taco-item__msg">クライアントワークで躓いた際のサポートありがとう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 19:28</time>宮城さん<span class="arrow">→</span>堺さん</span><span class="taco-item__msg">Raycast設定会の主催ありがとう、またテッキーに近づいた</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 19:36</time>坪井さん<span class="arrow">→</span>堺さん</span><span class="taco-item__msg">Give姿勢を見習っていきます</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 19:42</time>山内さん<span class="arrow">→</span>堺さん</span><span class="taco-item__msg">ご教示いただきありがとうございました</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 20:03</time>轟さん<span class="arrow">→</span>増谷さん</span><span class="taco-item__msg">「Why you」をGemに起こして架電時に使用、レイヤー別にトーク変更できてとても助かる</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/22 20:28</time>堺さん<span class="arrow">→</span>小甲さん</span><span class="taco-item__msg">4Dアップセル（35万円→70万円）ありがとうございます</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 10:05</time>海老根さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">勇ましい率先垂範の姿勢に</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 11:54</time>堺さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">私も朝イチの架電見習います</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 16:41</time>安達さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">出張中に気持ちいい報告をありがとう</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 18:43</time>川野さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">脅威の8アポに圧巻です</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:04</time>轟さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">複数案件ですごすぎます</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:05</time>轟さん<span class="arrow">→</span>坪井さん</span><span class="taco-item__msg">キックオフ時の「良い共有・悪い共有」あり、勉強になった</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:22</time>中村(岐)さん<span class="arrow">→</span>小甲さん</span><span class="taco-item__msg">先日いただいた4Dのアドバイスを生かしてアポ獲得できた</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:25</time>坪井さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">勝てなかったのが悔しい、ナイス8件です</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:25</time>坪井さん<span class="arrow">→</span>轟さん</span><span class="taco-item__msg">自身で情報を拾いに行く姿勢に学ぶところがたくさんある</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 19:25</time>小甲さん<span class="arrow">→</span>中村(岐)さん</span><span class="taco-item__msg">取れすぎかも！素晴らしい</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/23 20:23</time>堺さん<span class="arrow">→</span>秋元さん</span><span class="taco-item__msg">さすがです！！</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/24 07:10</time>堺さん<span class="arrow">→</span>中村(凌)さん</span><span class="taco-item__msg">業務委託への進捗の共有、助かりました</span></li>
+            <li class="taco-item"><span class="taco-item__who"><time class="taco-item__t">7/24 09:13</time>宮城さん<span class="arrow">→</span>松居さん</span><span class="taco-item__msg">体調不良を言い訳にせず、朝から架電・アプローチを続ける姿勢に</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 05 — Section: クリティカルTacos -->
+      <section class="slide section--pink" data-layout="section" aria-roledescription="slide" aria-labelledby="s5-title">
+        <div class="section-deco" aria-hidden="true">
+          <div class="blob blob--mint blob--big"></div>
+        </div>
+        <div class="slide__inner">
+          <span class="kicker reveal" style="--i:0">02 / 03</span>
+          <div class="section__num reveal" style="--i:1">02</div>
+          <h2 class="section__title reveal" style="--i:2" id="s5-title">特に深かった <em class="highlight">Tacos</em></h2>
+          <p class="section__sub reveal" style="--i:3">オフィス・環境 ／ 営業・商談 ／ 学び・Give の 3 ジャンルから、特に深かった 1 本ずつを表彰。</p>
+        </div>
+      </section>
+
+      <!-- 06 — Award: オフィス・環境 -->
+      <section class="slide" data-layout="two-column" aria-roledescription="slide" aria-labelledby="s6-title">
+        <div class="slide__inner">
+          <header class="slide-head reveal" style="--i:0">
+            <span class="kicker"><span class="genre-chip genre-chip--office">🏢 オフィス・環境</span> ― 宮城さん、轟さん、堺さん → 坪井さん</span>
+            <h2 class="title" id="s6-title">リーダー就任に<em class="squiggle">3名が続けて祝福</em></h2>
+          </header>
+          <div class="award-block">
+            <div class="award-badge reveal" style="--i:1">🏆</div>
+            <blockquote class="award-quote reveal" style="--i:2">
+              「就任おめでとう。責任範囲が広くなり忙しくなるかと思いますが、<strong>シュウトから学ぶ事も多々ある</strong>ので私も負けじと頑張ります」
+            </blockquote>
+            <div class="award-footer reveal" style="--i:3">
+              <div class="award-reason">
+                <h3>この一本が刺さる理由</h3>
+                <ul>
+                  <li>宮城さん・轟さん・堺さんの3名が続けて、坪井さんのリーダー就任を祝福した</li>
+                  <li>単なる「おめでとう」で終わらず、「学ぶことが多い」と本人への敬意も添えられている</li>
+                  <li>体制が変わる節目に、周囲が自然に声をかけるムーブメントになった</li>
+                </ul>
+              </div>
+              <div class="award-notice">
+                <h3>このTacosが気づかせること</h3>
+                <p>役割が変わる瞬間こそ、周囲からの一言が本人の背中を押す。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 — Award: 営業・商談 -->
+      <section class="slide" data-layout="two-column" aria-roledescription="slide" aria-labelledby="s7-title">
+        <div class="slide__inner">
+          <header class="slide-head reveal" style="--i:0">
+            <span class="kicker"><span class="genre-chip genre-chip--sales">💼 営業・商談</span> ― 海老根さん、堺さん、安達さん、川野さん、轟さん、坪井さん → 秋元さん</span>
+            <h2 class="title" id="s7-title">脅威の8アポに<em class="squiggle">称賛ラッシュ</em></h2>
+          </header>
+          <div class="award-block">
+            <div class="award-badge reveal" style="--i:1">🏆</div>
+            <blockquote class="award-quote reveal" style="--i:2">
+              「<strong>脅威の8アポ</strong>に圧巻です！！」
+            </blockquote>
+            <div class="award-footer reveal" style="--i:3">
+              <div class="award-reason">
+                <h3>この一本が刺さる理由</h3>
+                <ul>
+                  <li>秋元さんの週内8アポ達成に対し、海老根さん・堺さん・安達さん・川野さん・轟さん・坪井さんの6名が個別に称賛を送った</li>
+                  <li>「勝てなかったのが悔しい」「朝イチの架電見習います」など、称賛にとどまらず自分ごととして受け止める声も</li>
+                  <li>1本のスレッドに次々と祝福が重なり、チーム全体の刺激になった</li>
+                </ul>
+              </div>
+              <div class="award-notice">
+                <h3>このTacosが気づかせること</h3>
+                <p>数字で示す成果は、本人だけでなく周囲の奮起にもつながる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 — Award: 学び・Give -->
+      <section class="slide" data-layout="two-column" aria-roledescription="slide" aria-labelledby="s8-title">
+        <div class="slide__inner">
+          <header class="slide-head reveal" style="--i:0">
+            <span class="kicker"><span class="genre-chip genre-chip--learn">💡 学び・Give</span> ― 轟さん → 増谷さん</span>
+            <h2 class="title" id="s8-title">ナレッジ共有が<em class="squiggle">日々の架電で実った</em></h2>
+          </header>
+          <div class="award-block">
+            <div class="award-badge reveal" style="--i:1">🏆</div>
+            <blockquote class="award-quote reveal" style="--i:2">
+              「以前、ナレッジ共有されていた『なぜ「Why you」が効くのか』をGemにおこして架電時に使っているのですが、<strong>お客さんのレイヤーごとにトークを変更できる</strong>ので、とても助かっております！」
+            </blockquote>
+            <div class="award-footer reveal" style="--i:3">
+              <div class="award-reason">
+                <h3>この一本が刺さる理由</h3>
+                <ul>
+                  <li>過去のナレッジ共有を自分でGemに落とし込み、日々の架電で実際に活用している具体例</li>
+                  <li>「助かっている」で終わらず、レイヤーごとにトークを変えられるという効果まで丁寧に書かれている</li>
+                  <li>共有されたナレッジが一過性で終わらず、現場で活き続けている好例</li>
+                </ul>
+              </div>
+              <div class="award-notice">
+                <h3>このTacosが気づかせること</h3>
+                <p>ナレッジ共有の価値は、共有した瞬間ではなく、誰かが使い続けたときに証明される。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 — Closing -->
+      <section class="slide" data-layout="closing" aria-roledescription="slide" aria-labelledby="s9-title">
+        <div class="closing-deco" aria-hidden="true">
+          <div class="blob blob--pink blob--a"></div>
+          <div class="blob blob--mint blob--b"></div>
+          <div class="blob blob--sun blob--c"></div>
+        </div>
+        <div class="slide__inner slide__inner--center">
+          <span class="kicker reveal" style="--i:0">Have a great week!</span>
+          <h2 class="closing__title reveal" style="--i:1" id="s9-title">
+            <span class="gradient">今週も</span><br />感謝を贈り合いましょう！
+          </h2>
+          <p class="closing__text reveal" style="--i:2">
+            先週も 35 件の「ありがとう」が、チームの支え合いと学び合いを映していました。<br />
+            今週も、小さなGiveに気づいたら気軽にTacosを送りましょう！
+          </p>
+          <a class="closing__cta reveal" style="--i:3" href="#1">先頭に戻る →</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Chrome (bottom nav) -->
+    <div class="chrome">
+      <div class="chrome__brand">TACOS&nbsp;WEEKLY&nbsp;/&nbsp;07.27</div>
+      <nav class="controls" aria-label="Slide navigation">
+        <button class="control" data-action="prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+        </button>
+        <div class="counter" aria-live="polite">
+          <span id="cur">01</span><span class="counter__sep">/</span><span id="tot">09</span>
+        </div>
+        <button class="control" data-action="next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+      </nav>
+    </div>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress__bar" id="bar"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
