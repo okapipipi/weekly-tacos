@@ -1,0 +1,12 @@
+{
+  "id": "slides-weekly-tacos",
+  "title": "先週のTacos",
+  "subtitle": "Weekly All Hands / 感謝のふりかえり",
+  "description": "先週(8/28-9/4)社内で送られた 69 件の Tacos（🌮の数ベース、スレッド返信含む）を全件まとめた週次オールハンズ資料。日経BDR初月目標達成に5名が祝福、バックオフィス管理への感謝が週をまたいで積み重なるなど、感謝が広く行き渡った一週間。サマリ・全件一覧・注目ピックアップを1周し、今週への前向きな締めで終える。",
+  "tags": ["light", "pastel", "playful", "tacos", "all-hands"],
+  "swatches": ["#fff7ed", "#6b5bff", "#ff7ab6", "#51d0a8"],
+  "slideCount": 9,
+  "patterns": ["cover", "section", "stats", "taco-list", "two-column", "closing"],
+  "fonts": ["Plus Jakarta Sans", "Noto Sans JP", "Geist Mono"],
+  "createdAt": "2026-09-04"
+}
