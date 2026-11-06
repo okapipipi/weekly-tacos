@@ -1,0 +1,34 @@
+{
+  "id": "slides-weekly-tacos",
+  "title": "先週のTacos",
+  "subtitle": "Weekly All Hands / 感謝のふりかえり",
+  "description": "先週(10/30-11/6)に社内で送られた 51 件の Tacos（🌮の数ベース、HeyTacoステッカー・スレッド返信含む）を全件まとめた週次オールハンズ資料。確認対応で感謝が集まった山内さん、商談の振り返りを毎日の修正につなげると宣言した田中さん、提案書の作成勉強会を開いた海老根さんなど、支え合いと学び合いが見えた一週間。",
+  "tags": [
+    "light",
+    "pastel",
+    "playful",
+    "tacos",
+    "all-hands"
+  ],
+  "swatches": [
+    "#fff7ed",
+    "#6b5bff",
+    "#ff7ab6",
+    "#51d0a8"
+  ],
+  "slideCount": 9,
+  "patterns": [
+    "cover",
+    "section",
+    "stats",
+    "taco-list",
+    "two-column",
+    "closing"
+  ],
+  "fonts": [
+    "Plus Jakarta Sans",
+    "Noto Sans JP",
+    "Geist Mono"
+  ],
+  "createdAt": "2026-11-06"
+}
