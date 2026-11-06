@@ -1386,3 +1386,15 @@ code {
 .award-badge { font-size: 2.2rem; }
 .award-quote { line-height: 1.7; }
 .award-reason ul, .award-notice p { line-height: 1.6; }
+
+/* 2026-11-09: 画面の高さが低いとき（ブラウザ表示・Notion埋め込み等）の表彰スライド下切れ対策 */
+[data-layout="two-column"] .slide__inner { gap: clamp(.6rem, 2.2vh, 1.6rem); padding-top: clamp(1.2rem, 5vh, 3rem); padding-bottom: clamp(4rem, 11vh, 5.5rem); }
+[data-layout="two-column"] .title { font-size: clamp(1.5rem, 5.2vh, 3rem); }
+[data-layout="two-column"] .award-block { margin-top: 0; gap: clamp(.5rem, 1.6vh, .8rem); }
+[data-layout="two-column"] .award-badge { font-size: clamp(1.3rem, 4vh, 2.2rem); }
+[data-layout="two-column"] .award-quote { font-size: clamp(.9rem, 2.6vh, 1.2rem); line-height: 1.6; padding: clamp(.7rem, 2vh, 1.4rem) clamp(1.1rem, 2.2vw, 1.8rem); }
+[data-layout="two-column"] .award-reason,
+[data-layout="two-column"] .award-notice { padding: clamp(.6rem, 1.8vh, 1.1rem) 1.3rem; }
+[data-layout="two-column"] .award-reason ul,
+[data-layout="two-column"] .award-notice p { font-size: clamp(.74rem, 2.1vh, .9rem); line-height: 1.55; }
+@media (max-height: 720px) { [data-layout="two-column"] .award-badge { display: none; } }
